@@ -1,6 +1,12 @@
-/* =========================================
-   RESET
-========================================= */
+/* =====================================================
+   NISHAT PORTFOLIO
+   PURPLE GRADIENT THEME
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
 
 * {
     margin: 0;
@@ -14,8 +20,17 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #f8fafc;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f2fc 0%,
+            #eee4f8 45%,
+            #e6d8f3 100%
+        );
+
     color: #1e293b;
+
     line-height: 1.7;
 }
 
@@ -25,53 +40,72 @@ a {
 }
 
 
-/* =========================================
+/* =====================================================
    NAVBAR
-========================================= */
+===================================================== */
 
 header {
     position: fixed;
+
     top: 0;
     left: 0;
+
     width: 100%;
+
     z-index: 1000;
 }
 
 .navbar {
     height: 72px;
-    max-width: 1200px;
+
+    /* max-width: 1200px; */
+      width:100%
     margin: auto;
+
     padding: 0 35px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
-    background: rgba(255, 255, 255, 0.96);
+    background:
+        linear-gradient(
+            90deg,
+            #eee4f8,
+            #e8dcf5,
+            #eee4f8
+        );
 
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #d8c9e8;
 }
 
 .logo {
-    font-size: 21px;
+    font-size: 20px;
+
     font-weight: 600;
-    letter-spacing: -0.5px;
-    color: #2563eb;
+
+    color: #7046a3;
 }
 
 .nav-links {
     display: flex;
+
     align-items: center;
+
     gap: 28px;
+
     list-style: none;
 }
 
 .nav-links a {
     position: relative;
 
-    color: #475569;
+    color: #514663;
 
     font-size: 13px;
+
     font-weight: 500;
 
     transition: 0.3s;
@@ -79,7 +113,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #2563eb;
+    color: #7046a3;
 }
 
 .nav-links a.active::after {
@@ -88,18 +122,20 @@ header {
     position: absolute;
 
     left: 0;
+
     bottom: -8px;
 
     width: 100%;
+
     height: 2px;
 
-    background: #2563eb;
+    background: #7046a3;
 }
 
 
-/* =========================================
+/* =====================================================
    HOME
-========================================= */
+===================================================== */
 
 .home {
     min-height: 100vh;
@@ -109,30 +145,36 @@ header {
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     gap: 60px;
 
     background:
         radial-gradient(
-            circle at 85% 30%,
-            #dbeafe 0,
-            transparent 28%
+            circle at 82% 28%,
+            rgba(171, 137, 211, 0.38),
+            transparent 30%
         ),
-        #f8fafc;
+        linear-gradient(
+            135deg,
+            #f7f2fc 0%,
+            #eee4f8 48%,
+            #e3d4f1 100%
+        );
 }
 
 
-/* =========================================
+/* =====================================================
    HOME CONTENT
-========================================= */
+===================================================== */
 
 .home-content {
     max-width: 650px;
 }
 
 .small-title {
-    color: #2563eb;
+    color: #7046a3;
 
     font-size: 12px;
 
@@ -150,11 +192,11 @@ header {
 
     font-weight: 600;
 
-    color: #0f172a;
+    color: #111827;
 }
 
 .home h1 span {
-    color: #2563eb;
+    color: #7046a3;
 }
 
 .home h2 {
@@ -164,7 +206,7 @@ header {
 
     font-weight: 500;
 
-    color: #475569;
+    color: #514663;
 }
 
 .home-description {
@@ -172,17 +214,15 @@ header {
 
     margin-top: 18px;
 
-    color: #64748b;
+    color: #6b6078;
 
     font-size: 15px;
-
-    line-height: 1.9;
 }
 
 
-/* =========================================
-   BUTTONS
-========================================= */
+/* =====================================================
+   HOME BUTTONS
+===================================================== */
 
 .home-buttons {
     display: flex;
@@ -209,33 +249,51 @@ header {
 .primary-btn {
     color: white;
 
-    background: #2563eb;
+    background:
+        linear-gradient(
+            135deg,
+            #6b3f99,
+            #8056ad
+        );
+
+    box-shadow:
+        0 10px 25px rgba(107, 63, 153, 0.20);
 }
 
 .primary-btn:hover {
-    background: #1d4ed8;
+    background:
+        linear-gradient(
+            135deg,
+            #5d3487,
+            #7046a3
+        );
 
     transform: translateY(-2px);
 }
 
 .secondary-btn {
-    color: #2563eb;
+    color: #7046a3;
 
-    border: 1px solid #2563eb;
+    border: 1px solid #8056ad;
 
-    background: transparent;
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .secondary-btn:hover {
     color: white;
 
-    background: #2563eb;
+    background:
+        linear-gradient(
+            135deg,
+            #6b3f99,
+            #8056ad
+        );
 }
 
 
-/* =========================================
+/* =====================================================
    PROFILE PHOTO
-========================================= */
+===================================================== */
 
 .home-decoration {
     display: flex;
@@ -256,12 +314,17 @@ header {
 
     border-radius: 50%;
 
-    border: 8px solid white;
+    border: 3px solid white;
 
-    background: #dbeafe;
+    background:
+        linear-gradient(
+            135deg,
+            #d9c4eb,
+            #b99bd6
+        );
 
     box-shadow:
-        0 25px 60px rgba(37, 99, 235, 0.18);
+        0 20px 55px rgba(91, 61, 130, 0.20);
 
     transition: 0.4s;
 }
@@ -270,7 +333,7 @@ header {
     transform: translateY(-6px);
 
     box-shadow:
-        0 30px 70px rgba(37, 99, 235, 0.25);
+        0 30px 70px rgba(91, 61, 130, 0.28);
 }
 
 .circle img {
@@ -284,17 +347,16 @@ header {
 
     object-position: center;
 
-    /* Photo enhancement */
     filter:
-        brightness(1.08)
-        contrast(1.12)
+        brightness(1.10)
+        contrast(1.16)
         saturate(1.15);
 }
 
 
-/* =========================================
+/* =====================================================
    PAGE HEADER
-========================================= */
+===================================================== */
 
 .page-header {
     padding: 145px 30px 70px;
@@ -304,14 +366,18 @@ header {
     background:
         radial-gradient(
             circle at 50% 0%,
-            #dbeafe 0,
-            transparent 35%
+            rgba(171, 137, 211, 0.35),
+            transparent 38%
         ),
-        #f8fafc;
+        linear-gradient(
+            135deg,
+            #f7f2fc,
+            #e9dcf5
+        );
 }
 
 .page-header p {
-    color: #2563eb;
+    color: #7046a3;
 
     font-size: 11px;
 
@@ -323,7 +389,7 @@ header {
 .page-header h1 {
     margin-top: 8px;
 
-    color: #0f172a;
+    color: #111827;
 
     font-size: 46px;
 
@@ -331,9 +397,9 @@ header {
 }
 
 
-/* =========================================
+/* =====================================================
    ABOUT PAGE
-========================================= */
+===================================================== */
 
 .about-page {
     max-width: 1000px;
@@ -363,29 +429,38 @@ header {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 12px;
 
-    background: #2563eb;
+    background:
+        linear-gradient(
+            135deg,
+            #6b3f99,
+            #8056ad
+        );
 
     color: white;
 
     font-size: 60px;
 
     font-weight: 600;
+
+    box-shadow:
+        0 12px 30px rgba(107, 63, 153, 0.20);
 }
 
 .about-intro h2 {
     font-size: 32px;
 
-    color: #0f172a;
+    color: #111827;
 
     margin-bottom: 15px;
 }
 
 .about-intro p {
-    color: #64748b;
+    color: #6b6078;
 
     margin-bottom: 12px;
 
@@ -397,15 +472,15 @@ header {
 
     padding: 30px;
 
-    background: white;
+    background: rgba(255, 255, 255, 0.75);
 
-    border: 1px solid #e2e8f0;
+    border: 1px solid #ddd0eb;
 
     border-radius: 10px;
 }
 
 .info-label {
-    color: #2563eb;
+    color: #7046a3;
 
     font-size: 11px;
 
@@ -419,14 +494,19 @@ header {
 
     font-size: 21px;
 
-    color: #0f172a;
+    color: #111827;
 }
 
 .info-box p {
-    color: #64748b;
+    color: #6b6078;
 
     font-size: 14px;
 }
+
+
+/* =====================================================
+   INTERESTS
+===================================================== */
 
 .interest-list {
     display: flex;
@@ -443,9 +523,9 @@ header {
 
     border-radius: 4px;
 
-    background: #eff6ff;
+    background: #eadcf6;
 
-    color: #2563eb;
+    color: #7046a3;
 
     font-size: 12px;
 
@@ -453,9 +533,9 @@ header {
 }
 
 
-/* =========================================
+/* =====================================================
    EDUCATION
-========================================= */
+===================================================== */
 
 .education-section {
     margin-top: 80px;
@@ -466,7 +546,7 @@ header {
 }
 
 .section-heading p {
-    color: #2563eb;
+    color: #7046a3;
 
     font-size: 11px;
 
@@ -478,7 +558,7 @@ header {
 .section-heading h2 {
     margin-top: 5px;
 
-    color: #0f172a;
+    color: #111827;
 
     font-size: 32px;
 }
@@ -492,11 +572,11 @@ header {
 
     padding: 25px 0;
 
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #dcd0e8;
 }
 
 .education-year {
-    color: #2563eb;
+    color: #7046a3;
 
     font-size: 13px;
 
@@ -504,13 +584,13 @@ header {
 }
 
 .education-card h3 {
-    color: #0f172a;
+    color: #111827;
 
     font-size: 18px;
 }
 
 .education-card p {
-    color: #64748b;
+    color: #6b6078;
 
     font-size: 13px;
 }
@@ -518,13 +598,13 @@ header {
 .education-card .degree {
     margin: 5px 0;
 
-    color: #2563eb;
+    color: #7046a3;
 }
 
 
-/* =========================================
+/* =====================================================
    SKILLS PAGE
-========================================= */
+===================================================== */
 
 .skills-page {
     max-width: 1100px;
@@ -532,6 +612,14 @@ header {
     margin: auto;
 
     padding: 30px 30px 100px;
+}
+
+.skills-intro {
+    margin-bottom: 35px;
+
+    color: #6b6078;
+
+    font-size: 13px;
 }
 
 .skills-grid {
@@ -547,9 +635,9 @@ header {
 
     padding: 30px;
 
-    background: white;
+    background: rgba(255, 255, 255, 0.78);
 
-    border: 1px solid #e2e8f0;
+    border: 1px solid #ddd0eb;
 
     border-radius: 10px;
 
@@ -559,14 +647,14 @@ header {
 .skill-card:hover {
     transform: translateY(-6px);
 
-    border-color: #93c5fd;
+    border-color: #b99bd6;
 
     box-shadow:
-        0 18px 35px rgba(15, 23, 42, 0.07);
+        0 18px 35px rgba(91, 61, 130, 0.09);
 }
 
 .skill-number {
-    color: #2563eb;
+    color: #7046a3;
 
     font-size: 12px;
 
@@ -578,21 +666,52 @@ header {
 
     font-size: 25px;
 
-    color: #0f172a;
+    color: #111827;
 }
 
 .skill-card p {
     margin-top: 8px;
 
-    color: #64748b;
+    color: #6b6078;
 
     font-size: 13px;
 }
 
 
-/* =========================================
+/* =====================================================
+   TECHNOLOGY
+===================================================== */
+
+.technology-section {
+    margin-top: 75px;
+}
+
+.technology-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.technology-list span {
+    padding: 8px 15px;
+
+    background: #eadcf6;
+
+    color: #7046a3;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
    PROJECTS PAGE
-========================================= */
+===================================================== */
 
 .projects-page {
     max-width: 1100px;
@@ -613,9 +732,9 @@ header {
 .project-card {
     padding: 30px;
 
-    background: white;
+    background: rgba(255, 255, 255, 0.78);
 
-    border: 1px solid #e2e8f0;
+    border: 1px solid #ddd0eb;
 
     border-radius: 10px;
 
@@ -626,7 +745,7 @@ header {
     transform: translateY(-6px);
 
     box-shadow:
-        0 18px 35px rgba(15, 23, 42, 0.07);
+        0 18px 35px rgba(91, 61, 130, 0.09);
 }
 
 .project-top {
@@ -634,7 +753,7 @@ header {
 
     justify-content: space-between;
 
-    color: #2563eb;
+    color: #7046a3;
 
     font-size: 10px;
 
@@ -646,7 +765,7 @@ header {
 .project-card h2 {
     margin-top: 30px;
 
-    color: #0f172a;
+    color: #111827;
 
     font-size: 21px;
 }
@@ -654,7 +773,7 @@ header {
 .project-card p {
     margin-top: 12px;
 
-    color: #64748b;
+    color: #6b6078;
 
     font-size: 13px;
 }
@@ -672,9 +791,9 @@ header {
 .tech-list span {
     padding: 5px 9px;
 
-    background: #eff6ff;
+    background: #eadcf6;
 
-    color: #2563eb;
+    color: #7046a3;
 
     border-radius: 4px;
 
@@ -684,9 +803,9 @@ header {
 }
 
 
-/* =========================================
+/* =====================================================
    CONTACT PAGE
-========================================= */
+===================================================== */
 
 .contact-page {
     max-width: 900px;
@@ -699,29 +818,50 @@ header {
 .contact-content {
     padding: 55px;
 
-    background: #0f172a;
+    background:
+        linear-gradient(
+            135deg,
+            #4b286b,
+            #6b3f99,
+            #8056ad
+        );
 
     border-radius: 12px;
 
     color: white;
 
     text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(75, 40, 107, 0.22);
+}
+
+.contact-small {
+    color: #e9ddf5;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
 }
 
 .contact-content h2 {
+    margin-top: 7px;
+
     font-size: 34px;
 
     font-weight: 600;
 }
 
-.contact-content > p {
+.contact-content > p:not(.contact-small) {
     max-width: 600px;
 
     margin: 15px auto 40px;
 
-    color: #94a3b8;
+    color: #e9ddf5;
 
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .contact-details {
@@ -735,9 +875,17 @@ header {
 .contact-item {
     padding: 20px;
 
-    border: 1px solid #334155;
+    border: 1px solid rgba(255, 255, 255, 0.25);
 
     border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    border-color: #d8c1eb;
+
+    transform: translateY(-3px);
 }
 
 .contact-item span {
@@ -745,7 +893,7 @@ header {
 
     margin-bottom: 8px;
 
-    color: #60a5fa;
+    color: #d8c1eb;
 
     font-size: 10px;
 
@@ -755,38 +903,43 @@ header {
 }
 
 .contact-item a {
-    color: #e2e8f0;
+    color: #ffffff;
 
-    font-size: 12px;
+    font-size: 11px;
 
     word-break: break-word;
 }
 
 .contact-item a:hover {
-    color: #60a5fa;
+    color: #e9ddf5;
 }
 
 
-/* =========================================
+/* =====================================================
    FOOTER
-========================================= */
+===================================================== */
 
 footer {
     padding: 22px;
 
     text-align: center;
 
-    background: #020617;
+    background:
+        linear-gradient(
+            90deg,
+            #241331,
+            #36204b
+        );
 
-    color: #64748b;
+    color: #bca9ce;
 
     font-size: 11px;
 }
 
 
-/* =========================================
+/* =====================================================
    TABLET
-========================================= */
+===================================================== */
 
 @media (max-width: 850px) {
 
@@ -810,8 +963,6 @@ footer {
         flex-direction: column;
 
         text-align: center;
-
-        justify-content: center;
     }
 
     .home-content {
@@ -851,9 +1002,9 @@ footer {
 }
 
 
-/* =========================================
+/* =====================================================
    MOBILE
-========================================= */
+===================================================== */
 
 @media (max-width: 600px) {
 
@@ -915,8 +1066,6 @@ footer {
         width: 230px;
 
         height: 230px;
-
-        border-width: 6px;
     }
 
     .page-header {
@@ -955,4 +1104,5 @@ footer {
     .contact-content h2 {
         font-size: 28px;
     }
+
 }
