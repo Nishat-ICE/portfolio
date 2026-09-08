@@ -1192,3 +1192,8 @@ footer {
     }
 
 }
+/* Home page section positioning */
+
+.portfolio-section {
+    scroll-margin-top: 72px;
+}
